@@ -1,0 +1,38 @@
+{
+    "name": "codingfoundry/autotask-api",
+    "description": "Autotask SOAP API Wrapper for Laravel",
+    "keywords": ["laravel", "autotask"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-table": true,
+    "require": {
+        "opendns/autotask-php": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodingFoundry\\AutotaskAPI\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Garry Reimer",
+            "email": "garry@codingfoundry.com"
+        },
+        {
+            "name": "Taylor Maguire",
+            "email": "taylor@codingfoundry.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CodingFoundry\\AutotaskAPI\\AutotaskAPIServiceProvider"
+            ],
+            "aliases": {
+                "Autotask": "CodingFoundry\\AutotaskAPI\\AutotaskAPIFacade"
+            }
+        }
+    }
+}
+
+
